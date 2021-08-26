@@ -31,7 +31,7 @@
                 }
             }
         }
-        new Vue({
+        var vm = new Vue({
             el:'#app',
             components:{
                 'app-header':appHeader,
@@ -43,6 +43,7 @@
                 },
                 increaseNumber:function(){
                     this.num+=1;
+                    //this의 num 속성을 가리킴
                 }
             },
             data:{
